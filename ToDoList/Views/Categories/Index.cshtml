@@ -9,7 +9,8 @@
 
 @foreach (Category category in Model)
 {
-  <h3><a href='/categories/@category.Id'>@category.Name</a></h3>
+  <h3><a href='/categories/@category.ItemId'>@category.Name</a></h3>
 }
 
 <p><a href='/'>Back home</a></p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
